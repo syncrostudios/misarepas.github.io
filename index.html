@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Arepas — Tradición & Sabor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png?v=2" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+ 
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" role="navigation" aria-label="Navegación principal">
+    <a href="#" class="nav-logo" aria-label="Mis Arepas - Inicio">
+      <img src="img/logo.png" alt="" class="nav-logo-img" />
+      <span class="nav-logo-text"><span class="nl-mis">mis</span> <span class="nl-arepas">arepas</span></span>
+    </a>
+    <div class="nav-icons">
+      <a href="#" aria-label="Ubicación">
+        <!-- pin SVG -->
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </a>
+      <a href="#redes" aria-label="Redes sociales">
+        <!-- share SVG -->
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+      </a>
+    </div>
+  </nav>
+ 
+  <!-- ===== HERO ===== -->
+  <header id="hero" role="banner">
+    <!-- Slider de fondo: para añadir más fotos, copia una línea .hero-slide con otra imagen -->
+    <div class="hero-slider" aria-hidden="true">
+      <div class="hero-slide active" style="background-image:url('img/hero arepas.jpg')"></div>
+      <div class="hero-slider-overlay"></div>
+    </div>
+    <div class="hero-ornament a"></div>
+    <div class="hero-ornament b"></div>
+ 
+    <div class="hero-badge"><span></span> Tradición &amp; Sabor Auténtico <span></span></div>
+    <h1 class="hero-logo-h1">mis<img src="img/logo.png" alt="" class="hero-logo" /><em>arepas</em></h1>
+    <p class="hero-sub">Sabores que cuentan historias. La arepa de yuca que conquistó cada paladar, hecha con amor y los mejores ingredientes.</p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="document.getElementById('que-hacemos').scrollIntoView({behavior:'smooth'})">Ver nuestros productos</button>
+      <button class="btn-outline" onclick="document.getElementById('multimedia').scrollIntoView({behavior:'smooth'})">Conoce nuestra historia</button>
+    </div>
+ 
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </div>
+  </header>
+ 
+  <!-- ===== 3 TARJETAS ===== -->
+  <section id="cards" aria-labelledby="cards-title">
+    <div class="section-header reveal">
+      <span class="tag">Nuestra esencia</span>
+      <h2 id="cards-title">Conoce mis arepas</h2>
+      <p>Más que un producto, somos una experiencia gastronómica con identidad y propósito.</p>
+    </div>
+    <div class="cards-grid">
+      <article class="card reveal">
+        <div class="card-photo">
+          <img src="img/arepax.jpg" alt="Arepas de yuca doradas servidas en un plato de madera" loading="lazy" />
+        </div>
+        <div class="card-icon" aria-hidden="true">🌿</div>
+        <h3>¿Quiénes somos?</h3>
+        <p>Somos un emprendimiento apasionado por las tradiciones culinarias colombianas. Nacimos del amor por la arepa de yuca y el deseo de compartir ese sabor único con el mundo.</p>
+      </article>
+      <article class="card reveal">
+        <!-- FOTO: reemplaza este bloque por <img src="tu-foto.jpg" alt="descripción" /> cuando tengas la imagen -->
+        <div class="card-photo">
+          <img src="img/carrito arepas.jpg" alt="Carrito de arepas de yuca rellenas de queso" loading="lazy" />
+        </div>
+        <div class="card-icon" aria-hidden="true">⭐</div>
+        <h3>Misión &amp; Visión</h3>
+        <p><strong style="color:var(--verde);font-weight:600;">Misión:</strong> Ofrecer arepas artesanales de la más alta calidad, preservando recetas auténticas.<br><br><strong style="color:var(--verde);font-weight:600;">Visión:</strong> Ser referente gastronómico latinoamericano, llevando nuestra tradición a cada rincón.</p>
+      </article>
+      <article class="card reveal">
+        <!-- FOTO: reemplaza este bloque por <img src="tu-foto.jpg" alt="descripción" /> cuando tengas la imagen -->
+        <div class="card-photo">
+          <img src="img/equipo.jpg" alt="Nuestro equipo preparando arepas de yuca en el carrito" loading="lazy" />
+        </div>
+        <div class="card-icon" aria-hidden="true">👥</div>
+        <h3>Nuestro equipo</h3>
+        <p>Un equipo joven, creativo y comprometido. Chefs, creativos y emprendedores unidos por la pasión de reinventar la tradición con estilo y calidad premium.</p>
+      </article>
+    </div>
+  </section>
+ 
+  <!-- ===== MULTIMEDIA ===== -->
+  <section id="multimedia" aria-labelledby="multimedia-title">
+    <div class="multimedia-inner">
+      <div class="video-wrapper reveal">
+        <!-- Miniatura del video: al hacer clic se reproduce (o abre YouTube si la página se ve desde un archivo local) -->
+        <button type="button" class="yt-facade" id="yt-facade" aria-label="Reproducir video: conoce a mis arepas">
+          <img src="https://i.ytimg.com/vi/WPhtUbK_QFI/maxresdefault.jpg" alt="Miniatura del video: conoce a mis arepas"
+               onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/WPhtUbK_QFI/hqdefault.jpg'" loading="lazy" />
+          <span class="yt-play" aria-hidden="true">
+            <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.7a8.5 8.5 0 0 0-6 6C0 13 0 24 0 24s0 11 1.5 16.3a8.5 8.5 0 0 0 6 6C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.5a8.5 8.5 0 0 0 6-6C68 35 68 24 68 24s0-11-1.5-16.3z" fill="#f00"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+          </span>
+        </button>
+        <style>
+          .yt-facade{position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:#111;cursor:pointer}
+          .yt-facade img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .2s}
+          .yt-facade:hover img{opacity:.85}
+          .yt-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transition:transform .2s}
+          .yt-facade:hover .yt-play{transform:scale(1.1)}
+        </style>
+        <script>
+          (function () {
+            var VIDEO_ID = 'WPhtUbK_QFI';
+            var btn = document.getElementById('yt-facade');
+            if (!btn) return;
+            btn.addEventListener('click', function () {
+              // Desde un archivo local (file://) YouTube bloquea el video incrustado (error 153): se abre en YouTube.
+              if (location.protocol !== 'http:' && location.protocol !== 'https:') {
+                window.open('https://www.youtube.com/watch?v=' + VIDEO_ID, '_blank', 'noopener');
+                return;
+              }
+              var f = document.createElement('iframe');
+              f.src = 'https://www.youtube.com/embed/' + VIDEO_ID + '?autoplay=1&rel=0';
+              f.title = 'conoce a mis arepas';
+              f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+              f.referrerPolicy = 'strict-origin-when-cross-origin';
+              f.allowFullscreen = true;
+              btn.replaceWith(f);
+            });
+          })();
+        </script>
+      </div>
+      <div class="multimedia-text reveal">
+        <span class="tag">Nuestra historia</span>
+        <h2 id="multimedia-title">Identidad que sabe a hogar</h2>
+        <p>En mis arepas creemos que la comida es cultura. Cada arepa que preparamos lleva consigo generaciones de tradición, ingredientes seleccionados y el calor de manos que cocinan con propósito.</p>
+        <p>Nuestro equipo es tan diverso como los sabores que ofrecemos: chefs apasionados, creativos visuales y emprendedores con visión que trabajan juntos para darte la mejor experiencia.</p>
+        <div class="team-names" aria-label="Miembros del equipo">
+          <span class="team-pill">Chef Principal</span>
+          <span class="team-pill">Diseño &amp; Marca</span>
+          <span class="team-pill">Operaciones</span>
+          <span class="team-pill">Community</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== QUÉ HACEMOS ===== -->
+  <section id="que-hacemos" aria-labelledby="productos-title">
+    <div class="section-header reveal">
+      <span class="tag">Especialidades</span>
+      <h2 id="productos-title">Qué hacemos</h2>
+      <p>Productos artesanales elaborados con ingredientes frescos y recetas auténticas colombianas.</p>
+    </div>
+    <div class="productos-grid">
+      <div class="producto-item reveal">
+        <div class="producto-icon producto-icon--foto">
+          <img src="img/arepa-chorizo.jpg" alt="Arepa de yuca con chorizo y salsa verde" loading="lazy" />
+        </div>
+        <h3>Arepa de Yuca con Chorizo</h3>
+        <p>La combinación perfecta: masa de yuca suave con chorizo artesanal ahumado. El combo favorito.</p>
+        <div class="producto-precio">$7.500 <small>COP</small></div>
+      </div>
+      <div class="producto-item reveal">
+        <div class="producto-icon producto-icon--foto">
+          <img src="img/chorizo artesanal.jpg" alt="Chorizos artesanales a la parrilla" loading="lazy" />
+        </div>
+        <h3>Chorizo Artesanal</h3>
+        <p>Elaborado con cortes selectos y especias tradicionales. El sabor que complementa todo.</p>
+        <div class="producto-precio">$4.000 <small>COP</small></div>
+      </div>
+      <div class="producto-item reveal">
+        <div class="producto-icon producto-icon--foto">
+          <img src="img/arepa de yuca.jpg" alt="Arepas de yuca doradas a la parrilla" loading="lazy" />
+        </div>
+        <h3>Arepa de Yuca</h3>
+        <p>Nuestra estrella. Crujiente por fuera, suave por dentro. Pura tradición colombiana.</p>
+        <div class="producto-precio">$3.500 <small>COP</small></div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== SHOWCASE — PRODUCTO NUEVO ===== -->
+  <section id="showcase" aria-labelledby="showcase-title">
+    <div class="showcase-inner reveal">
+      <span class="showcase-badge">✨ Nuevo lanzamiento</span>
+      <h2 id="showcase-title">Descubre nuestra<br>última creación</h2>
+      <p>Innovando sobre la tradición. Nuestra nueva propuesta combina técnicas modernas con los sabores que te hacen sentir en casa.</p>
+      <div class="showcase-img-wrap" style="max-width:340px;">
+        <img src="img/arepa carne.jpg"Nuevo producto: arepa de yuca rellena de carne desmechada y queso" style="display:block;width:100%;height:auto;" loading="lazy" />
+      </div>
+    </div>
+  </section>
+ 
+ 
+ 
+  <!-- ===== REDES SOCIALES ===== -->
+  <section id="redes" aria-labelledby="redes-title">
+    <span class="tag">Comunidad</span>
+    <h2 id="redes-title" class="serif reveal">Síguenos en</h2>
+    <p class="reveal">Únete a nuestra comunidad y sé parte de la familia mis arepas.</p>
+    <div class="redes-grid reveal">
+      <a href="https://www.youtube.com/watch?v=WPhtUbK_QFI" class="red-item" data-red="youtube" aria-label="YouTube de Mis Arepas" target="_blank" rel="noopener">
+        <div class="red-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </div>
+        <span class="red-label">YouTube</span>
+      </a>
+      <a href="https://www.instagram.com/misarepasdebarrio?stkn=MW15cmFuNWxoMTFxbg==" class="red-item" data-red="instagram" aria-label="Instagram de Mis Arepas" target="_blank" rel="noopener">
+        <div class="red-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </div>
+        <span class="red-label">Instagram</span>
+      </a>
+    </div>
+  </section>
+ 
+  <!-- ===== WHATSAPP FLOTANTE ===== -->
+  <a
+    id="whatsapp-btn"
+    href="https://wa.me/573000000000"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chatea con nosotros por WhatsApp"
+    title="Escríbenos por WhatsApp"
+  >
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+ 
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col footer-logo-col">
+        <h2>mis <span>arepas</span></h2>
+        <p>Tradición colombiana con sabor auténtico. Hecho con amor, servido con orgullo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Servicio al cliente</h4>
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Política de devoluciones</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Horarios de atención</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Negocios digitales</h4>
+        <ul>
+          <li><a href="#">Pedidos en línea</a></li>
+          <li><a href="#">Alianzas comerciales</a></li>
+          <li><a href="#">Franquicias</a></li>
+          <li><a href="#">Distribución</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nuestra empresa</h4>
+        <ul>
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a href="#">Prensa</a></li>
+          <li><a href="#">Sostenibilidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Mis Arepas. Todos los derechos reservados.<br>Desarrollado por <strong style="color:rgba(255,255,255,.7);">Syncro Studios</strong></span>
+      <div class="footer-redes" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/misarepasdebarrio?stkn=MW15cmFuNWxoMTFxbg==" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="js/main.js"></script>
+</body>
+</html>
